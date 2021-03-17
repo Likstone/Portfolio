@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="content">
+                <h2 class="subtitle">Мое имя</h2>
+                <h1 class="title">Иванин Даниил и я <span>Веб-разработчик</span></h1>
+                <div class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page </div>
+                <a href="contact" class="content-button">Контакты</a>
+            </div>
+    </div> <!--/.container-content> -->
+    <div class="harold-bg-vert">
+        <img src="{% static 'main/img/harold.png' %}" class="harold-png">
+    </div>
+{% endblock %}
+
+{% block header-link %}
+    <a class="header-nav-link active" href="/">Главная</a>
+    <a class="header-nav-link" href="about">Обо мне</a>
+    <a class="header-nav-link" href="contact">Контакты</a>
+{% endblock %}
+

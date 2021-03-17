@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %} Контакты {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="content">
+            <h1 class="title-contacts">Напиши мне <span>письмо</span></h1>
+            <p class="text-contacts text">Сюда ты можешь написать мне на бутофорский почтовый ящик, который даже не привязан к базе данных KEKW</p>
+        </div>
+        <form action="/" method="post" class="form">
+            <input class="input" placeholder="Name">
+            <input class="input" placeholder="Email">
+            <input class="input" placeholder="Phone">
+            <textarea class="textarea" name="text" placeholder="Message"></textarea>
+            <a href="contact" class="content-button contacts-button">Отправить сообщение</a>
+        </form>
+    </div>
+
+{% endblock %}
+{% block header-link %}
+    <a class="header-nav-link " href="/">Главная</a>
+    <a class="header-nav-link" href="about">Обо мне</a>
+    <a class="header-nav-link active" href="contact">Контакты</a>
+{% endblock %}
